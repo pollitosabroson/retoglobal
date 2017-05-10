@@ -20,7 +20,11 @@ class Command(BaseCommand):
         print(options['total'])
         print(options)
         for number in options['total']:
-            payload = {'results': number, 'inc': 'gender,name,dob'}
+            payload = {
+                'inc': 'gender,name,dob',
+                'nat': 'us,dk,fr,gb',
+                'results': number,
+            }
             results = requests.get(
                 'https://randomuser.me/api/',
                 params=payload
