@@ -75,8 +75,25 @@ WSGI_APPLICATION = 'retoglobal.wsgi.application'
 
 DATABASES = {
     'default': {
+        # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'ENGINE': 'django.db.backends.mysql',
+        # Or path to database file if using sqlite3.
+        'NAME': os.environ['DB_NAME'],
+        'USER': os.environ['DB_USER'],
+        'PASSWORD': os.environ['DB_PASSWORD'],
+        # Set to empty string for localhost. Not used with sqlite3.
+        'HOST': os.environ['DB_HOST'],
+        # Set to empty string for default. Not used with sqlite3.
+        'PORT': '',
+        # 4h timeout. Should be less than MySQL wait_timeout (8h by default)
+        'CONN_MAX_AGE': 14400,
+    },
+    'test': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'TEST': {
+            'NAME': 'testdatabase',
+        },
     }
 }
 
