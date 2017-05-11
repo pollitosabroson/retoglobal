@@ -17,8 +17,6 @@ class Command(BaseCommand):
         parser.add_argument('total', nargs='+', type=int)
 
     def handle(self, *args, **options):
-        print(options['total'])
-        print(options)
         for number in options['total']:
             payload = {
                 'inc': 'gender,name,dob',
