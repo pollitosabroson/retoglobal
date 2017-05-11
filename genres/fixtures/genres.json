@@ -1,0 +1,1 @@
+[{"model": "genres.genre", "pk": 1, "fields": {"name": "male"}}, {"model": "genres.genre", "pk": 2, "fields": {"name": "female"}}]
