@@ -214,3 +214,8 @@ Para ejecutar las pruebas se debe de correr los test:
 ```sh
     $ python manage.py test
 ```
+
+   [MySql]: <https://www.mysql.com/downloads/>
+   [VirtualEnv]: <https://virtualenv.pypa.io/en/stable/>
+   [VirtualEnvWraprer]: <http://virtualenvwrapper.readthedocs.io/en/latest/>
+   [Python]: <https://www.python.org/>
