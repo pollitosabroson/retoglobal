@@ -8,7 +8,7 @@ from hobbies.models import Hobbie
 
 
 class User(models.Model):
-    age = models.CharField(max_length=255)
+    age = models.IntegerField()
     genre = models.ForeignKey(
         Genre
     )
