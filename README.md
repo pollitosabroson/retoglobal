@@ -169,7 +169,7 @@ End-Point diseñado para mostrar todos los usuarios:
 ```
 Ejemplo:
 ```sh
-    http://localhost:8000
+    http://localhost:8000/users
 ```
 
 Regresa lo siguiente:
